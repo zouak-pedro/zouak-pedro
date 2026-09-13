@@ -1,11 +1,12 @@
 <h1 align="center">Hi there, I'm Pedro Zouak 👋</h1>
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&width=550&height=50&lines=SaaS+Entrepreneur+%F0%9F%9A%80;Next.js+%26+TypeScript+Specialist+%E2%9A%A1;Building+Scalable+Web+Applications+%F0%9F%8C%90;Contributing+to+Diverse+Tech+Stacks+%28Python%2FDjango%29+%F0%9F%A7%A0" alt="Typing SVG" />
+  <b>🚀 SaaS Entrepreneur & Next.js / TypeScript Specialist ⚡</b>
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://img.shields.io/badge/Status-Building_The_Future-success?style=for-the-badge&logo=appveyor" alt="Status"></a>
-  <a href="https://github.com/zouak-pedro"><img src="https://img.shields.io/badge/Focus-SaaS_%26_Fullstack-blue?style=for-the-badge&logo=rocket" alt="Focus"></a>
+  <img src="https://img.shields.io/badge/Status-Building_The_Future-success?style=for-the-badge&logo=appveyor" alt="Status">
+  <img src="https://img.shields.io/badge/Focus-SaaS_%26_Fullstack-blue?style=for-the-badge&logo=rocket" alt="Focus">
+  <img src="https://img.shields.io/badge/Stack-Next.js_%7C_React_%7C_TypeScript-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Stack">
 </p>
 
 ---
@@ -21,32 +22,11 @@
 
 ### 🛠️ Tech Stack & Ecosystem
 
-| Category | Technologies |
+| Category | Technologies & Tools |
 | :--- | :--- |
 | **Frontend & Mobile** | ![Next.js](https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js&logoColor=white) ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38Bdf8?style=flat-square&logo=tailwind-css&logoColor=white) |
 | **Backend & APIs** | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white) ![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![REST API](https://img.shields.io/badge/REST_API-02569B?style=flat-square&logo=postman&logoColor=white) |
 | **Databases & Cloud** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) |
-
----
-
-### 🏆 GitHub Trophies & Achievements
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=zouak-pedro&theme=tokyonight&no-bg=true&no-frame=true&margin-w=5&margin-h=5" alt="GitHub Trophies" />
-</p>
-
----
-
-### 📊 GitHub Stats & Metrics
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=zouak-pedro&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.vercel.app/?user=zouak-pedro&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zouak-pedro&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top Languages" />
-</p>
 
 ---
 
@@ -56,5 +36,5 @@
 ---
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=zouak-pedro&color=38BDF8&style=flat-square&label=Profile+Views" alt="Profile Views" />
+  ✨ <i>Let's build something amazing together!</i> ✨
 </p>
