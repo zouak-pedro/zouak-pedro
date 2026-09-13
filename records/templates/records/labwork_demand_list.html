@@ -1,0 +1,36 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Labwork Demands" %}{% endblock title %}
+{% block page_title %}{% trans "Labwork demands" %}{% endblock page_title %}
+
+{% block content %}
+    {% url 'core:dashboard' as back_url %}
+    {% include "core/partials/back_button.html" with back_url=back_url back_label="Back to dashboard" %}
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">{% trans "Labwork demands" %}</h2>
+        <a href="{% url 'records:labwork_demand_add' %}" class="btn btn-primary">{% trans "New demand" %}</a>
+    </div>
+
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            {% if demands %}
+                <table class="table align-middle">
+                    <thead><tr><th>{% trans "Date" %}</th><th>{% trans "Patient" %}</th><th>{% trans "Doctor" %}</th><th></th></tr></thead>
+                    <tbody>
+                        {% for d in demands %}
+                            <tr>
+                                <td>{{ d.created_at|date:"Y-m-d H:i" }}</td>
+                                <td>{{ d.patient }}</td>
+                                <td>{{ d.doctor }}</td>
+                                <td><a href="{% url 'records:labwork_demand_print' d.pk %}" target="_blank" class="btn btn-sm btn-outline-primary">{% trans "Print" %}</a></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="text-muted mb-0">{% trans "No labwork demands yet." %}</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,82 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Appointments" %} | MediCore{% endblock title %}
+{% block page_title %}{% trans "Appointments" %} — {{ day }}{% endblock page_title %}
+
+
+{% block content %}
+    {% url 'core:dashboard' as back_url %}
+    {% include "core/partials/back_button.html" with back_url=back_url back_label="Back to dashboard" %}
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold mb-0">{{ day }}</h2>
+
+        <div class="d-flex gap-2">
+            <a href="{% url 'appointments:walk_in' %}" class="btn btn-outline-primary">
+                {% trans "Add walk-in" %}
+            </a>
+            <a href="{% url 'appointments:add' %}" class="btn btn-primary">
+                {% trans "Book appointment" %}
+            </a>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+
+            {% if appointments %}
+                <table class="table align-middle">
+                    <thead>
+                        <tr>
+                            <th>{% trans "Time" %}</th>
+                            <th>{% trans "Patient" %}</th>
+                            <th>{% trans "Doctor" %}</th>
+                            <th>{% trans "Type" %}</th>
+                            <th>{% trans "Status" %}</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for appt in appointments %}
+                            <tr>
+                                <td>{{ appt.scheduled_at|time:"H:i" }}</td>
+                                <td>{{ appt.patient }}</td>
+                                <td>{{ appt.doctor }}</td>
+                                <td>{{ appt.type }}</td>
+                                <td>
+                                    {% if appt.is_walk_in %}
+                                        <span class="badge bg-warning text-dark">{% trans "Walk-in" %}</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">{% trans "Scheduled" %}</span>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    <span class="badge bg-info text-dark">{{ appt.get_status_display }}</span>
+                                </td>
+                                <td>
+                                    <form method="post" action="{% url 'appointments:update_status' appt.pk %}" class="d-flex gap-2">
+                                        {% csrf_token %}
+                                        <select name="status" class="form-select form-select-sm">
+                                            {% for value, label in appt.Status.choices %}
+                                                <option value="{{ value }}" {% if value == appt.status %}selected{% endif %}>
+                                                    {{ label }}
+                                                </option>
+                                            {% endfor %}
+                                        </select>
+                                        <button type="submit" class="btn btn-sm btn-outline-primary">
+                                            {% trans "Update" %}
+                                        </button>
+                                    </form>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% else %}
+                <p class="text-muted mb-0">{% trans "No appointments for this day." %}</p>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock content %}

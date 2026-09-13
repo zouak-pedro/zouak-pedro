@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page { size: A4; margin: 2cm; }
+        body { font-family: Arial, sans-serif; font-size: 12pt; color: #212529; }
+        .header { border-bottom: 2px solid #0d6efd; padding-bottom: 10px; margin-bottom: 20px; }
+        .clinic-name { font-size: 18pt; font-weight: bold; }
+        .doctor-line { margin-top: 4px; color: #495057; }
+        .meta { display: flex; justify-content: space-between; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border-bottom: 1px solid #dee2e6; padding: 8px; text-align: left; font-size: 11pt; }
+        th { background-color: #f8f9fa; }
+        .notes { margin-top: 20px; }
+        .footer { margin-top: 60px; display: flex; justify-content: flex-end; }
+        .stamp-signature img { max-height: 80px; }
+        .clinic-footer { margin-top: 40px; font-size: 9pt; color: #6c757d; text-align: center; border-top: 1px solid #dee2e6; padding-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="clinic-name">{{ clinic.name }}</div>
+        {% if clinic.address %}<div>{{ clinic.address }}</div>{% endif %}
+        <div class="doctor-line">
+            Dr. {{ doctor.user.get_full_name }}
+            {% if doctor.document_profile.professional_title %} — {{ doctor.document_profile.professional_title }}{% endif %}
+            — {{ doctor.specialty }}
+        </div>
+    </div>
+
+    <div class="meta">
+        <div>
+            <strong>Patient:</strong> {{ report.patient }}<br>
+            {% if report.patient.age %}<strong>Age:</strong> {{ report.patient.age }}<br>{% endif %}
+        </div>
+        <div><strong>Date:</strong> {{ report.created_at|date:"Y-m-d" }}</div>
+    </div>
+
+    <table>
+        <thead><tr><th>Procedure</th><th>Findings / notes</th></tr></thead>
+        <tbody>
+            {% for item in items %}
+                <tr><td>{{ item.procedure_name }}</td><td>{{ item.findings }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if report.notes %}
+        <div class="notes"><strong>General notes:</strong><p>{{ report.notes }}</p></div>
+    {% endif %}
+
+    <div class="footer">
+        <div class="stamp-signature text-end">
+            {% if doctor.document_profile.stamp %}<img src="{{ doctor.document_profile.stamp.url }}" alt="Stamp"><br>{% endif %}
+            {% if doctor.document_profile.signature %}<img src="{{ doctor.document_profile.signature.url }}" alt="Signature">{% endif %}
+        </div>
+    </div>
+
+    {% if clinic.document_footer %}<div class="clinic-footer">{{ clinic.document_footer }}</div>{% endif %}
+</body>
+</html>

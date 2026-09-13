@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page { size: A4; margin: 2cm; }
+        body { font-family: Arial, sans-serif; font-size: 12pt; color: #212529; }
+        .header { border-bottom: 2px solid #0d6efd; padding-bottom: 10px; margin-bottom: 20px; }
+        .clinic-name { font-size: 18pt; font-weight: bold; }
+        .doctor-line { margin-top: 4px; color: #495057; }
+        .meta { display: flex; justify-content: space-between; margin-bottom: 20px; }
+        .content { margin-top: 20px; white-space: pre-wrap; line-height: 1.6; }
+        .footer { margin-top: 60px; display: flex; justify-content: flex-end; }
+        .stamp-signature img { max-height: 80px; }
+        .clinic-footer { margin-top: 40px; font-size: 9pt; color: #6c757d; text-align: center; border-top: 1px solid #dee2e6; padding-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="clinic-name">{{ clinic.name }}</div>
+        {% if clinic.address %}<div>{{ clinic.address }}</div>{% endif %}
+        {% if clinic.phone %}<div>{{ clinic.phone }}</div>{% endif %}
+        <div class="doctor-line">
+            Dr. {{ doctor.user.get_full_name }}
+            {% if doctor.document_profile.professional_title %} — {{ doctor.document_profile.professional_title }}{% endif %}
+            — {{ doctor.specialty }}
+        </div>
+    </div>
+
+    <div class="meta">
+        <div>
+            <strong>Patient:</strong> {{ note.patient }}<br>
+            {% if note.patient.age %}<strong>Age:</strong> {{ note.patient.age }}<br>{% endif %}
+        </div>
+        <div><strong>Date:</strong> {{ note.created_at|date:"Y-m-d" }}</div>
+    </div>
+
+    <div class="content">{{ note.content }}</div>
+
+    <div class="footer">
+        <div class="stamp-signature text-end">
+            {% if doctor.document_profile.stamp %}<img src="{{ doctor.document_profile.stamp.url }}" alt="Stamp"><br>{% endif %}
+            {% if doctor.document_profile.signature %}<img src="{{ doctor.document_profile.signature.url }}" alt="Signature">{% endif %}
+        </div>
+    </div>
+
+    {% if clinic.document_footer %}
+        <div class="clinic-footer">{{ clinic.document_footer }}</div>
+    {% endif %}
+
+</body>
+</html>

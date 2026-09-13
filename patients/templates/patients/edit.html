@@ -1,0 +1,66 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Edit" %} {{ patient }} | MediCore{% endblock title %}
+{% block page_title %}{% trans "Edit patient" %}{% endblock page_title %}
+
+{% block content %}
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+            <form method="post">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                    <div class="alert alert-danger">{{ form.non_field_errors }}</div>
+                {% endif %}
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        {{ form.first_name.label_tag }}
+                        {{ form.first_name }}
+                        {% for error in form.first_name.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        {{ form.last_name.label_tag }}
+                        {{ form.last_name }}
+                        {% for error in form.last_name.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        {{ form.date_of_birth.label_tag }}
+                        {{ form.date_of_birth }}
+                        {% for error in form.date_of_birth.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        {{ form.approximate_age.label_tag }}
+                        {{ form.approximate_age }}
+                        {% for error in form.approximate_age.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    {{ form.phone.label_tag }}
+                    {{ form.phone }}
+                    {% for error in form.phone.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                </div>
+
+                <div class="mb-3">
+                    {{ form.address.label_tag }}
+                    {{ form.address }}
+                    {% for error in form.address.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                </div>
+
+                <div class="mb-4">
+                    {{ form.reason_for_visit.label_tag }}
+                    {{ form.reason_for_visit }}
+                    {% for error in form.reason_for_visit.errors %}<div class="text-danger small mt-1">{{ error }}</div>{% endfor %}
+                </div>
+
+                <button type="submit" class="btn btn-primary">{% trans "Save changes" %}</button>
+                <a href="{% url 'patients:detail' patient.pk %}" class="btn btn-outline-secondary">{% trans "Cancel" %}</a>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

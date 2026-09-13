@@ -1,0 +1,1465 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-13 10:02+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: accounts/forms.py:33 clinics/templates/clinics/doctor_detail.html:26
+#: clinics/templates/clinics/secretary_detail.html:23 patients/forms.py:54
+#: patients/templates/patients/list.html:28
+msgid "Phone"
+msgstr "Téléphone"
+
+#: accounts/forms.py:41 clinics/forms.py:47 clinics/forms.py:51
+#: clinics/forms.py:149 clinics/forms.py:150 clinics/forms.py:209
+#: clinics/forms.py:210 patients/forms.py:8 patients/forms.py:12
+msgid "First name"
+msgstr "Prénom"
+
+#: accounts/forms.py:42 clinics/forms.py:56 clinics/forms.py:60
+#: clinics/forms.py:152 clinics/forms.py:153 clinics/forms.py:212
+#: clinics/forms.py:213 patients/forms.py:19 patients/forms.py:23
+msgid "Last name"
+msgstr "Nom"
+
+#: accounts/forms.py:43 clinics/forms.py:65 clinics/forms.py:155
+#: clinics/forms.py:215 clinics/templates/clinics/doctor_detail.html:23
+#: clinics/templates/clinics/doctor_list.html:21
+#: clinics/templates/clinics/secretary_detail.html:20
+#: clinics/templates/clinics/secretary_list.html:23
+msgid "Email"
+msgstr "E-mail"
+
+#: accounts/forms.py:44
+msgid "Language"
+msgstr "Langue"
+
+#: accounts/forms.py:57 clinics/forms.py:113 clinics/forms.py:178
+#: clinics/forms.py:228 clinics/views.py:98 clinics/views.py:141
+msgid "An account with this email already exists."
+msgstr "Un compte avec cet e-mail existe déjà."
+
+#: accounts/forms.py:74
+msgid "Current password"
+msgstr "Mot de pass actuel"
+
+#: accounts/forms.py:79
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: accounts/forms.py:84
+msgid "Confirm new password"
+msgstr "Confirmer Nouveau mot de passe"
+
+#: accounts/models.py:13
+msgid "Email is required"
+msgstr "L'adresse e-mail est requise."
+
+#: accounts/models.py:64 appointments/forms.py:19 appointments/forms.py:63
+#: appointments/forms.py:90
+#: appointments/templates/appointments/day_list.html:34
+#: core/templates/core/dashboard.html:121
+#: patients/templates/patients/detail.html:62
+#: patients/templates/patients/detail.html:104
+#: patients/templates/patients/detail.html:145
+#: patients/templates/patients/detail.html:186
+#: patients/templates/patients/detail.html:227 records/forms.py:14
+#: records/forms.py:75 records/forms.py:94 records/forms.py:119
+#: records/templates/records/labwork_demand_list.html:19
+#: records/templates/records/note_list.html:24
+#: records/templates/records/prescription_list.html:26
+#: records/templates/records/procedure_report_list.html:20
+msgid "Doctor"
+msgstr "Médecin"
+
+#: accounts/models.py:65
+
+msgid "Secretary"
+msgstr "Secrétaire"
+
+#: accounts/templates/accounts/edit_profile.html:3
+#: accounts/templates/accounts/edit_profile.html:4
+#: core/templates/core/base.html:67
+msgid "My Profile"
+msgstr "Mon profil"
+
+#: accounts/templates/accounts/edit_profile.html:12
+msgid "Profile information"
+msgstr "Informations du profil"
+
+#: accounts/templates/accounts/edit_profile.html:58
+#: appointments/templates/appointments/edit.html:42
+#: clinics/templates/clinics/settings.html:62
+#: patients/templates/patients/edit.html:61
+#: records/templates/records/labwork_demand_edit.html:38
+#: records/templates/records/note_edit.html:33
+#: records/templates/records/prescription_edit.html:53
+#: records/templates/records/procedure_report_edit.html:43
+msgid "Save changes"
+msgstr "Enregistrer les modifications"
+
+#: accounts/templates/accounts/edit_profile.html:68
+#: accounts/templates/accounts/edit_profile.html:98
+msgid "Change password"
+msgstr "Changer le mot de passe"
+
+#: accounts/templates/accounts/login.html:13
+msgid "Login"
+msgstr "Connexion"
+
+#: accounts/templates/accounts/login.html:55
+msgid "Sign in to your clinic"
+msgstr "Connectez-vous à votre clinique"
+
+#: accounts/templates/accounts/login.html:104
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: accounts/templates/accounts/login.html:112
+msgid "Don't have a clinic yet?"
+msgstr "Vous n'avez pas encore de clinique ?"
+
+#: accounts/templates/accounts/login.html:119
+msgid "Create one"
+msgstr "Créer une clinique"
+
+#: accounts/views.py:27
+msgid "Your account is inactive."
+msgstr "Votre compte est inactif."
+
+#: accounts/views.py:40
+msgid "Invalid email or password."
+msgstr "E-mail ou mot de passe invalide."
+
+#: accounts/views.py:53
+msgid "You have been logged out successfully"
+msgstr "Vous avez été déconnecté avec succès"
+
+#: accounts/views.py:67
+msgid "Profile updated successfully"
+msgstr "Profil mis à jour avec succès"
+
+#: accounts/views.py:77
+msgid "Password changed successfully"
+msgstr "Mot de passe modifié avec succès"
+
+#: appointments/forms.py:15 appointments/forms.py:59
+#: appointments/templates/appointments/day_list.html:33
+#: appointments/templates/appointments/edit.html:11
+#: core/templates/core/dashboard.html:120
+#: records/templates/records/labwork_demand_list.html:19
+#: records/templates/records/labwork_demand_pdf.html:35
+#: records/templates/records/note_list.html:23
+#: records/templates/records/prescription_list.html:25
+#: records/templates/records/procedure_report_list.html:20
+msgid "Patient"
+msgstr "Patient"
+
+#: appointments/forms.py:23 appointments/forms.py:67 appointments/forms.py:94
+msgid "Appointment type"
+msgstr "Type de rendez-vous"
+
+#: appointments/forms.py:26 appointments/forms.py:70 appointments/forms.py:97
+msgid "e.g. Colonoscopy"
+msgstr "ex. Coloscopie"
+
+#: appointments/forms.py:31 appointments/forms.py:102
+msgid "Date & time"
+msgstr "Date et heure"
+
+#: appointments/forms.py:45 appointments/forms.py:84 appointments/forms.py:115
+msgid "Appointment type is required."
+msgstr "Le type de rendez-vous est requis."
+
+#: appointments/forms.py:53
+msgid "You can't book an appointment in the past."
+msgstr "Vous ne pouvez pas prendre un rendez-vous dans le passé."
+
+#: appointments/models.py:28
+#: appointments/templates/appointments/day_list.html:51
+msgid "Scheduled"
+msgstr "Programmé"
+
+#: appointments/models.py:29
+msgid "Arrived"
+msgstr "Arrivé"
+
+#: appointments/models.py:30
+msgid "Waiting"
+msgstr "En attendant"
+
+#: appointments/models.py:31
+msgid "With doctor"
+msgstr "Avec le médecin"
+
+#: appointments/models.py:32
+msgid "Done"
+msgstr "Fait"
+
+#: appointments/models.py:33 billing/models.py:24 billing/models.py:79
+msgid "Cancelled"
+msgstr "Annulé"
+
+#: appointments/models.py:34
+msgid "No show"
+msgstr "Non-présentation"
+
+#: appointments/templates/appointments/add.html:4
+#: appointments/templates/appointments/add.html:5
+msgid "Book Appointment"
+msgstr "Prendre un rendez-vous"
+
+#: appointments/templates/appointments/add.html:54
+msgid "Book"
+msgstr "Réserver"
+
+#: appointments/templates/appointments/add.html:55
+#: appointments/templates/appointments/walk_in.html:47
+#: billing/templates/billing/request_plan_change.html:65
+#: clinics/templates/clinics/doctor_add.html:41
+#: clinics/templates/clinics/secretary_add.html:38
+#: patients/templates/patients/add.html:94
+#: patients/templates/patients/edit.html:62
+#: records/templates/records/labwork_demand_add.html:34
+#: records/templates/records/labwork_demand_edit.html:39
+#: records/templates/records/note_add.html:35
+#: records/templates/records/note_edit.html:34
+#: records/templates/records/prescription_add.html:53
+#: records/templates/records/prescription_edit.html:54
+#: records/templates/records/procedure_report_add.html:37
+#: records/templates/records/procedure_report_edit.html:44
+msgid "Cancel"
+msgstr "Annuler"
+
+#: appointments/templates/appointments/day_list.html:4
+#: appointments/templates/appointments/day_list.html:5
+#: core/templates/core/base.html:77 patients/templates/patients/detail.html:25
+msgid "Appointments"
+msgstr "Rendez-vous"
+
+#: appointments/templates/appointments/day_list.html:17
+#: patients/templates/patients/detail.html:54
+msgid "Add walk-in"
+msgstr "Ajouter une visite sans rendez-vous"
+
+#: appointments/templates/appointments/day_list.html:20
+#: patients/templates/patients/detail.html:55
+msgid "Book appointment"
+msgstr "Prendre un rendez-vous"
+
+#: appointments/templates/appointments/day_list.html:32
+#: core/templates/core/dashboard.html:119
+msgid "Time"
+msgstr "Heure"
+
+#: appointments/templates/appointments/day_list.html:35
+#: patients/templates/patients/detail.html:62
+msgid "Type"
+msgstr "Type"
+
+#: appointments/templates/appointments/day_list.html:36
+#: billing/templates/billing/subscription.html:16
+#: billing/templates/billing/subscription.html:47
+#: billing/templates/billing/subscription.html:82
+#: clinics/templates/clinics/doctor_list.html:24
+#: clinics/templates/clinics/secretary_list.html:25
+#: core/templates/core/dashboard.html:122
+#: patients/templates/patients/detail.html:62
+msgid "Status"
+msgstr "Statut"
+
+#: appointments/templates/appointments/day_list.html:49
+#: appointments/templates/appointments/edit.html:12
+msgid "Walk-in"
+msgstr "Visite sans rendez-vous"
+
+#: appointments/templates/appointments/day_list.html:68
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: appointments/templates/appointments/day_list.html:77
+msgid "No appointments for this day."
+msgstr "Aucun rendez-vous pour ce jour."
+
+#: appointments/templates/appointments/edit.html:4
+#: appointments/templates/appointments/edit.html:5
+msgid "Edit appointment"
+msgstr "Modifier le rendez-vous"
+
+#: appointments/templates/appointments/walk_in.html:4
+#: appointments/templates/appointments/walk_in.html:5
+msgid "Add Walk-in"
+msgstr "Ajouter une visite sans rendez-vous"
+
+#: appointments/templates/appointments/walk_in.html:46
+msgid "Add to today's list"
+msgstr "Ajouter à la liste du jour"
+
+#: appointments/views.py:29
+msgid "You must belong to a clinic to manage appointments."
+msgstr "Vous devez appartenir à une clinique pour gérer les rendez-vous."
+
+#: appointments/views.py:69
+msgid "Appointment booked successfully"
+msgstr "Rendez-vous pris avec succès"
+
+#: appointments/views.py:102
+msgid "Walk-in added to today's list"
+msgstr "Visite sans rendez-vous ajoutée à la liste du jour"
+
+#: appointments/views.py:130
+msgid "Invalid status."
+msgstr "Statut invalide."
+
+#: appointments/views.py:132
+msgid "Status updated"
+msgstr "Statut mis à jour"
+
+#: appointments/views.py:157
+msgid "Appointment updated"
+msgstr "Rendez-vous mis à jour"
+
+#: billing/forms.py:12
+msgid "requested_plan"
+msgstr "Plan demandé"
+
+#: billing/forms.py:13
+msgid "payment_method"
+msgstr "Mode de paiement"
+
+#: billing/forms.py:14
+msgid "proof_file"
+msgstr "Justificatif de paiement"
+
+#: billing/forms.py:15
+msgid "reference_note"
+msgstr "Note de référence"
+
+#: billing/forms.py:17
+msgid "e.g. transfer reference number (optional)"
+msgstr "ex. numéro de référence du virement (facultatif)"
+
+#: billing/models.py:16
+msgid "Trial"
+msgstr "Fin de l'essai"
+
+#: billing/models.py:17
+msgid "Standard (1 doctor, 1 secretary)"
+msgstr "Standard (1 médecin, 1 secrétaire)"
+
+#: billing/models.py:18 billing/views.py:105
+msgid "Pay per visit"
+msgstr "Paiement à la visite"
+
+#: billing/models.py:21
+msgid "Trialing"
+msgstr "Essais"
+
+#: billing/models.py:22 clinics/templates/clinics/doctor_detail.html:16
+#: clinics/templates/clinics/doctor_list.html:37
+#: clinics/templates/clinics/secretary_detail.html:13
+#: clinics/templates/clinics/secretary_list.html:37
+msgid "Active"
+msgstr "Actif"
+
+#: billing/models.py:23
+msgid "Past due"
+msgstr "En retard de paiement"
+
+#: billing/models.py:25
+msgid "Expired"
+msgstr "Expiré"
+
+#: billing/models.py:75
+msgid "Draft"
+msgstr "Brouillon"
+
+#: billing/models.py:76
+msgid "Issued"
+msgstr "Émis"
+
+#: billing/models.py:77
+msgid "Paid"
+msgstr "Payé"
+
+#: billing/models.py:78
+msgid "Overdue"
+msgstr "En retard"
+
+#: billing/models.py:106
+msgid "Bank transfer"
+msgstr "Virement bancaire"
+
+#: billing/models.py:110 billing/templates/billing/subscription.html:58
+msgid "Pending review"
+msgstr "En attente d'examen"
+
+#: billing/models.py:111 billing/templates/billing/subscription.html:60
+msgid "Approved"
+msgstr "Approuvé"
+
+#: billing/models.py:112 billing/templates/billing/subscription.html:62
+msgid "Rejected"
+msgstr "Rejeté"
+
+#: billing/models.py:135
+msgid "Optional — transfer reference number, sender name, or other note to help matching."
+msgstr "Facultatif — numéro de référence du virement, nom de l'expéditeur ou autre mention pour faciliter le rapprochement."
+
+#: billing/models.py:170
+msgid "Any extra instructions shown to clinic-admins (e.g. 'include your clinic name in the transfer reference')."
+msgstr "Toute instruction supplémentaire affichée à l'intention des administrateurs de la clinique (par ex. indiquez le nom de votre clinique dans la référence du transfert)."
+
+#: billing/models.py:206
+msgid "Pending"
+msgstr "En attente"
+
+#: billing/models.py:207
+msgid "Completed"
+msgstr "Complété"
+
+#: billing/models.py:208
+msgid "Failed"
+msgstr "Échoué"
+
+#: billing/templates/billing/change_plan.html:4
+msgid "Change Plan"
+msgstr "Changer de plan"
+
+#: billing/templates/billing/change_plan.html:5
+#: billing/templates/billing/subscription.html:12
+msgid "Change plan"
+msgstr "Changer de plan"
+
+#: billing/templates/billing/change_plan.html:9
+#: billing/templates/billing/change_plan.html:27
+#: billing/templates/billing/subscription.html:11
+msgid "Current plan"
+msgstr "Plan actuel"
+
+#: billing/templates/billing/change_plan.html:10
+msgid "Switching takes effect immediately — no proration or refund for the remainder of your current period."
+msgstr "Le changement prend effet immédiatement — aucun prorata ni remboursement pour le reste de votre période en cours."
+
+#: billing/templates/billing/change_plan.html:20
+msgid "month"
+msgstr "mois"
+
+#: billing/templates/billing/change_plan.html:22
+msgid "per visit"
+msgstr "par visite"
+
+#: billing/templates/billing/change_plan.html:34
+msgid "Switch & pay with card"
+msgstr "Changer et payer par carte"
+
+#: billing/templates/billing/change_plan.html:36
+msgid "Switch plan"
+msgstr "Changer de plan"
+
+#: billing/templates/billing/change_plan.html:48
+msgid "Prefer bank transfer or CCP instead?"
+msgstr "Vous préférez un virement bancaire ou CCP ?"
+
+#: billing/templates/billing/change_plan.html:49
+msgid "Submit a manual payment request"
+msgstr "Soumettre une demande de paiement manuelle"
+
+#: billing/templates/billing/payment_failure.html:3
+msgid "Payment Failed"
+msgstr "Paiement échoué"
+
+#: billing/templates/billing/payment_failure.html:4
+msgid "Payment failed"
+msgstr "Paiement échoué"
+
+#: billing/templates/billing/payment_failure.html:7
+msgid "Your payment could not be completed. Please try again."
+msgstr "Votre paiement n'a pas pu être finalisé. Veuillez réessayer."
+
+#: billing/templates/billing/payment_failure.html:9
+#: billing/templates/billing/payment_success.html:10
+msgid "Back to billing"
+msgstr "Retour à la facturation"
+
+#: billing/templates/billing/payment_success.html:4
+msgid "Payment Successful"
+msgstr "Paiement réussi"
+
+#: billing/templates/billing/payment_success.html:5
+msgid "Payment successful"
+msgstr "Paiement réussi"
+
+#: billing/templates/billing/payment_success.html:8
+msgid "Your payment was received. It may take a moment for the invoice status to update."
+msgstr "Votre paiement a été reçu. La mise à jour du statut de la facture peut prendre un instant."
+
+#: billing/templates/billing/request_plan_change.html:4
+msgid "Request Plan Change"
+msgstr "Demande de changement de plan"
+
+#: billing/templates/billing/request_plan_change.html:5
+msgid "Request a plan change"
+msgstr "Demande de changement de plan"
+
+#: billing/templates/billing/request_plan_change.html:11
+msgid "Make a bank transfer or CCP payment to our account (details below), then upload your proof of payment here. We'll review it and activate your new plan — usually within one business day."
+msgstr "Effectuez un virement bancaire ou un paiement CCP sur notre compte (détails ci-dessous), puis téléchargez votre preuve de paiement ici. Nous l'examinerons et activerons votre nouveau forfait — généralement sous un jour ouvrable."
+
+#: billing/templates/billing/request_plan_change.html:16
+msgid "Bank / CCP details"
+msgstr "Coordonnées bancaires / CCP"
+
+#: billing/templates/billing/request_plan_change.html:21
+msgid "Key"
+msgstr "Clé"
+
+#: billing/templates/billing/request_plan_change.html:29
+msgid "Payment instructions haven't been configured yet. Please contact support before submitting a proof of payment."
+msgstr "Les informations de paiement n'ont pas encore été configurées. Veuillez contacter le support avant de soumettre un justificatif de paiement."
+
+#: billing/templates/billing/request_plan_change.html:64
+msgid "Submit request"
+msgstr "Soumettre la demande"
+
+#: billing/templates/billing/subscription.html:5
+#: core/templates/core/base.html:109
+msgid "Billing"
+msgstr "Facturation"
+
+#: billing/templates/billing/subscription.html:6
+msgid "Subscription & Billing"
+msgstr "Abonnement et facturation"
+
+#: billing/templates/billing/subscription.html:15
+msgid "Plan"
+msgstr "Plan"
+
+#: billing/templates/billing/subscription.html:19
+msgid "Trial ends"
+msgstr "Fin de l'essai"
+
+#: billing/templates/billing/subscription.html:22
+msgid "Your trial has ended. Contact us to upgrade to a paid plan."
+msgstr "Votre essai est terminé. Contactez-nous pour passer à un plan payant."
+
+#: billing/templates/billing/subscription.html:27
+msgid "No subscription found."
+msgstr "Aucun abonnement trouvé."
+
+#: billing/templates/billing/subscription.html:34
+msgid "Plan change requests"
+msgstr "Demandes de changement de plan"
+
+#: billing/templates/billing/subscription.html:36
+msgid "Request a plan change (bank transfer / CCP)"
+msgstr "Demander un changement de plan (virement bancaire / CCP)"
+
+#: billing/templates/billing/subscription.html:44
+#: patients/templates/patients/detail.html:62
+#: patients/templates/patients/detail.html:104
+#: patients/templates/patients/detail.html:145
+#: patients/templates/patients/detail.html:186
+#: patients/templates/patients/detail.html:227
+#: records/templates/records/labwork_demand_list.html:19
+#: records/templates/records/labwork_demand_pdf.html:38
+#: records/templates/records/note_list.html:22
+#: records/templates/records/prescription_list.html:24
+#: records/templates/records/procedure_report_list.html:20
+msgid "Date"
+msgstr "Date"
+
+#: billing/templates/billing/subscription.html:45
+msgid "Requested plan"
+msgstr "Plan demandé"
+
+#: billing/templates/billing/subscription.html:46
+msgid "Method"
+msgstr "Méthode"
+
+#: billing/templates/billing/subscription.html:70
+msgid "No plan change requests yet."
+msgstr "Aucune demande de changement de plan pour le moment."
+
+#: billing/templates/billing/subscription.html:77
+msgid "Invoices"
+msgstr "Factures"
+
+#: billing/templates/billing/subscription.html:82
+msgid "Period"
+msgstr "Période"
+
+#: billing/templates/billing/subscription.html:82
+msgid "Amount"
+msgstr "Montant"
+
+#: billing/templates/billing/subscription.html:92
+msgid "Pay now"
+msgstr "Payer maintenant"
+
+#: billing/templates/billing/subscription.html:100
+msgid "No invoices yet."
+msgstr "Aucune facture pour le moment."
+
+#: billing/views.py:28
+msgid "Only a clinic administrator can view billing."
+msgstr "Seul un administrateur de clinique peut consulter la facturation."
+
+#: billing/views.py:98
+msgid "Standard"
+msgstr "Standard"
+
+#: billing/views.py:100
+msgid "1 doctor + 1 secretary, unlimited patients."
+msgstr "1 médecin + 1 secrétaire, patients illimités."
+
+#: billing/views.py:107
+msgid "Unlimited staff and patients. 50 DA per visit, billed monthly based on actual usage."
+msgstr "Personnel et patients illimités. 50 DA par visite, facturé mensuellement selon l'utilisation réelle."
+
+#: billing/views.py:124
+msgid "Invalid plan selection."
+msgstr "Sélection de plan invalide."
+
+#: billing/views.py:132
+msgid "Your plan has been switched to Pay-per-visit."
+msgstr "Votre plan a été changé pour Paiement à la visite."
+
+#: billing/views.py:162
+msgid "Your request has been submitted. We'll review your proof of payment and activate your plan shortly."
+msgstr "Votre demande a été soumise. Nous examinerons votre justificatif de paiement et activerons votre plan sous peu."
+
+#: clinics/forms.py:18
+msgid "Clinic name"
+msgstr "Nom de la clinique"
+
+#: clinics/forms.py:22
+msgid "Enter clinic name"
+msgstr "Entrez le nom de la clinique"
+
+#: clinics/forms.py:27
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: clinics/forms.py:31
+msgid "Enter clinic phone number"
+msgstr "Entrez le numéro de téléphone de la clinique"
+
+#: clinics/forms.py:35 patients/forms.py:65
+msgid "Address"
+msgstr "Adresse"
+
+#: clinics/forms.py:40
+msgid "Enter clinic address"
+msgstr "Entrez l'adresse de la clinique"
+
+#: clinics/forms.py:74 clinics/forms.py:158 clinics/forms.py:218
+msgid "Password"
+msgstr "Mot de passe"
+
+#: clinics/forms.py:78 clinics/forms.py:159 clinics/forms.py:219
+msgid "Create a password"
+msgstr "Créer un mot de passe"
+
+#: clinics/forms.py:83 clinics/forms.py:161 clinics/forms.py:162
+#: clinics/forms.py:221 clinics/forms.py:222
+msgid "Confirm password"
+msgstr "Confirmer le mot de passe"
+
+#: clinics/forms.py:87
+msgid "Confirm your password"
+msgstr "Confirmez votre mot de passe"
+
+#: clinics/forms.py:94 clinics/forms.py:165
+#: clinics/templates/clinics/doctor_list.html:22
+msgid "Specialty"
+msgstr "Spécialité"
+
+#: clinics/forms.py:98 clinics/forms.py:168
+msgid "Start typing e.g. Cardiology"
+msgstr "Commencez à taper, ex. Cardiologie"
+
+#: clinics/forms.py:121 clinics/forms.py:186
+msgid "Specialty is required."
+msgstr "La spécialité est requise."
+
+#: clinics/forms.py:134 clinics/forms.py:197 clinics/forms.py:239
+msgid "Passwords do not match."
+msgstr "Les mots de passe ne correspondent pas."
+
+#: clinics/forms.py:255
+msgid "name"
+msgstr "Nom"
+
+#: clinics/forms.py:256
+msgid "phone"
+msgstr "Téléphone"
+
+#: clinics/forms.py:257
+msgid "address"
+msgstr "Adresse"
+
+#: clinics/forms.py:258
+msgid "document_header"
+msgstr "En-tête de document"
+
+#: clinics/forms.py:260
+msgid "Optional text shown at the top of every printed document"
+msgstr "Texte facultatif affiché en haut de chaque document imprimé"
+
+#: clinics/forms.py:262
+msgid "document_footer"
+msgstr "pied de page du document"
+
+#: clinics/forms.py:264
+msgid "Optional text shown at the bottom of every printed document"
+msgstr "Texte facultatif affiché en bas de chaque document imprimé"
+
+#: clinics/templates/clinics/doctor_add.html:3
+msgid "Add Doctor"
+msgstr "Ajouter un médecin"
+
+#: clinics/templates/clinics/doctor_add.html:4
+#: clinics/templates/clinics/doctor_add.html:40
+#: clinics/templates/clinics/doctor_list.html:12
+msgid "Add doctor"
+msgstr "Ajouter un médecin"
+
+#: clinics/templates/clinics/doctor_detail.html:18
+#: clinics/templates/clinics/doctor_list.html:39
+#: clinics/templates/clinics/secretary_detail.html:15
+#: clinics/templates/clinics/secretary_list.html:39
+msgid "Inactive"
+msgstr "Inactif"
+
+#: clinics/templates/clinics/doctor_detail.html:29
+msgid "Clinic admin"
+msgstr "Administrateur de clinique"
+
+#: clinics/templates/clinics/doctor_detail.html:30
+msgid "Yes"
+msgstr "Oui"
+
+#: clinics/templates/clinics/doctor_detail.html:30
+msgid "No"
+msgstr "Non"
+
+#: clinics/templates/clinics/doctor_detail.html:32
+#: clinics/templates/clinics/secretary_detail.html:29
+msgid "Joined"
+msgstr "Inscrit le"
+
+#: clinics/templates/clinics/doctor_detail.html:38
+msgid "This is the clinic administrator account and cannot be deactivated."
+msgstr "Il s'agit du compte administrateur de la clinique ; il ne peut pas être désactivé."
+
+#: clinics/templates/clinics/doctor_detail.html:44
+msgid "Deactivate doctor"
+msgstr "Désactiver le médecin"
+
+#: clinics/templates/clinics/doctor_detail.html:46
+msgid "Reactivate doctor"
+msgstr "Réactiver le médecin"
+
+#: clinics/templates/clinics/doctor_list.html:3
+#: clinics/templates/clinics/doctor_list.html:4
+#: clinics/templates/clinics/doctor_list.html:11
+#: core/templates/core/base.html:82 core/templates/core/dashboard.html:68
+msgid "Doctors"
+msgstr "Médecins"
+
+#: clinics/templates/clinics/doctor_list.html:20
+#: clinics/templates/clinics/secretary_list.html:22
+#: patients/templates/patients/list.html:27
+msgid "Name"
+msgstr "Nom"
+
+#: clinics/templates/clinics/doctor_list.html:23
+#: clinics/templates/clinics/doctor_list.html:34
+msgid "Admin"
+msgstr "Administrateur"
+
+#: clinics/templates/clinics/doctor_list.html:43
+#: clinics/templates/clinics/secretary_list.html:43
+#: patients/templates/patients/list.html:43
+msgid "View"
+msgstr "Voir"
+
+#: clinics/templates/clinics/doctor_list.html:50
+msgid "No doctors yet."
+msgstr "Aucun médecin pour le moment."
+
+#: clinics/templates/clinics/register.html:7
+msgid "Create Clinic"
+msgstr "Créer une clinique"
+
+#: clinics/templates/clinics/register.html:20
+msgid "Create your clinic"
+msgstr "Créer une clinique"
+
+#: clinics/templates/clinics/register.html:22
+msgid "Set up your clinic and administrator account."
+msgstr "Configurez votre clinique et votre compte administrateur."
+
+#: clinics/templates/clinics/register.html:35
+#: clinics/templates/clinics/settings.html:13
+msgid "Clinic information"
+msgstr "Informations de la clinique"
+
+#: clinics/templates/clinics/register.html:72
+msgid "Administrator account"
+msgstr "Compte administrateur"
+
+#: clinics/templates/clinics/register.html:140
+msgid "Create clinic"
+msgstr "Créer une clinique"
+
+#: clinics/templates/clinics/secretary_add.html:4
+msgid "Add Secretary"
+msgstr "Ajouter une secrétaire"
+
+#: clinics/templates/clinics/secretary_add.html:5
+#: clinics/templates/clinics/secretary_add.html:37
+#: clinics/templates/clinics/secretary_list.html:13
+msgid "Add secretary"
+msgstr "Ajouter une secrétaire"
+
+#: clinics/templates/clinics/secretary_detail.html:26
+#: clinics/templates/clinics/secretary_list.html:24
+msgid "Added by"
+msgstr "Ajouté par"
+
+#: clinics/templates/clinics/secretary_detail.html:36
+msgid "Deactivate secretary"
+msgstr "Désactiver la secrétaire"
+
+#: clinics/templates/clinics/secretary_detail.html:38
+msgid "Reactivate secretary"
+msgstr "Réactiver la secrétaire"
+
+#: clinics/templates/clinics/secretary_list.html:4
+#: clinics/templates/clinics/secretary_list.html:5
+#: clinics/templates/clinics/secretary_list.html:12
+#: core/templates/core/base.html:87 core/templates/core/dashboard.html:88
+msgid "Secretaries"
+msgstr "Secrétaires"
+
+#: clinics/templates/clinics/secretary_list.html:50
+msgid "No secretaries yet."
+msgstr "Aucune secrétaire pour le moment."
+
+#: clinics/templates/clinics/settings.html:4
+msgid "Clinic Settings"
+msgstr "Paramètres de la clinique"
+
+#: clinics/templates/clinics/settings.html:5
+msgid "Clinic settings"
+msgstr "Paramètres de la clinique"
+
+#: clinics/templates/clinics/settings.html:41
+msgid "Document letterhead"
+msgstr "En-tête de document"
+
+#: clinics/templates/clinics/settings.html:43
+msgid "This text appears at the top and bottom of every prescription, note, report, and labwork demand your clinic prints."
+msgstr "Ce texte apparaît en haut et en bas de chaque ordonnance, note, compte rendu et demande d'analyses imprimés par votre clinique."
+
+#: clinics/views.py:35
+msgid "An account with this email already exist."
+msgstr "Un compte avec cet e-mail existe déjà."
+
+#: clinics/views.py:40
+msgid "Your clinic has been created successfully"
+msgstr "Votre clinique a été créée avec succès"
+
+#: clinics/views.py:66
+msgid "Only a clinic administrator can manage staff."
+msgstr "Seul un administrateur de clinique peut gérer le personnel."
+
+#: clinics/views.py:102
+msgid "Doctor added successfully"
+msgstr "Médecin ajouté avec succès"
+
+#: clinics/views.py:145
+msgid "Secretary added successfully"
+msgstr "Secrétaire ajoutée avec succès"
+
+#: clinics/views.py:165
+msgid "Clinic settings updated"
+msgstr "Paramètres de la clinique mis à jour"
+
+#: clinics/views.py:207
+msgid "Doctor activated"
+msgstr "Médecin activé"
+
+#: clinics/views.py:209
+msgid "Doctor deactivated"
+msgstr "Médecin désactivé"
+
+#: clinics/views.py:226
+msgid "Secretary activated"
+msgstr "Secrétaires activé"
+
+#: clinics/views.py:228
+msgid "Secretary deactivated"
+msgstr "Secrétaires désactivé"
+
+#: core/templates/core/base.html:62 core/templates/core/base.html:139
+#: core/templates/core/dashboard.html:4 core/templates/core/dashboard.html:8
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: core/templates/core/base.html:72 core/templates/core/dashboard.html:32
+#: patients/templates/patients/list.html:4
+#: patients/templates/patients/list.html:8
+#: patients/templates/patients/list.html:15
+msgid "Patients"
+msgstr "Patients"
+
+#: core/templates/core/base.html:94
+#: records/templates/records/document_profile.html:4
+#: records/templates/records/document_profile.html:5
+msgid "My Document Profile"
+msgstr "Mon profil de document"
+
+#: core/templates/core/base.html:101
+msgid "Audit Log"
+msgstr "Journal d'audit"
+
+#: core/templates/core/base.html:116
+msgid "Settings"
+msgstr "Paramètres"
+
+#: core/templates/core/base.html:152
+msgid "Profile"
+msgstr "Profil"
+
+#: core/templates/core/base.html:161
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: core/templates/core/dashboard.html:14
+#, python-format
+msgid "Welcome %(name)s"
+msgstr "Bienvenue %(name)s"
+
+#: core/templates/core/dashboard.html:18
+#, python-format
+msgid "Here's what's happening in %(clinic_name)s."
+msgstr "Voici ce qui se passe à %(clinic_name)s."
+
+#: core/templates/core/dashboard.html:50 core/templates/core/dashboard.html:112
+msgid "Today's appointments"
+msgstr "Rendez-vous du jour"
+
+#: core/templates/core/dashboard.html:142
+msgid "No appointments scheduled for today."
+msgstr "Aucun rendez-vous prévu aujourd'hui."
+
+#: core/templates/core/dashboard.html:159
+msgid "Quick actions"
+msgstr "Actions rapides"
+
+#: core/templates/core/dashboard.html:168
+#: patients/templates/patients/add.html:90
+#: patients/templates/patients/list.html:17
+msgid "Add patient"
+msgstr "Ajouter un patient"
+
+#: core/templates/core/dashboard.html:175
+msgid "New appointment"
+msgstr "Nouveau rendez-vous"
+
+#: patients/forms.py:30
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#: patients/forms.py:34
+msgid "date"
+msgstr "date"
+
+#: patients/forms.py:43
+msgid "Approximate age (if DOB unknown)"
+msgstr "Âge approximatif (si date de naissance inconnue)"
+
+#: patients/forms.py:47
+msgid "e.g. 45"
+msgstr "par exemple 45"
+
+#: patients/forms.py:58
+msgid "+213 555 12 34 56"
+msgstr "+213 555 12 34 56"
+
+#: patients/forms.py:70
+msgid "Enter patient address"
+msgstr "Entrez l'adresse du patient"
+
+#: patients/forms.py:78 patients/templates/patients/list.html:30
+msgid "Reason for visit"
+msgstr "Motif de la visite"
+
+#: patients/forms.py:82
+msgid "e.g. follow-up, chest pain, prescription renewal"
+msgstr "ex. suivi, douleur thoracique, renouvellement d'ordonnance"
+
+#: patients/templates/patients/add.html:4
+#: patients/templates/patients/add.html:8
+msgid "Add Patient"
+msgstr "Ajouter un patient"
+
+#: patients/templates/patients/detail.html:12
+#, python-format
+msgid "Age %(age)s · "
+msgstr "Âge %(age)s ·"
+
+#: patients/templates/patients/detail.html:18
+#: patients/templates/patients/edit.html:5
+msgid "Edit patient"
+msgstr "Modifier le patient"
+
+#: patients/templates/patients/detail.html:19
+msgid "← Back to patients"
+msgstr "← Retour aux patients"
+
+#: patients/templates/patients/detail.html:28
+#: records/templates/records/prescription_list.html:4
+#: records/templates/records/prescription_list.html:5
+#: records/templates/records/prescription_list.html:12
+msgid "Prescriptions"
+msgstr "Ordonnances"
+
+#: patients/templates/patients/detail.html:31
+#: records/templates/records/note_list.html:4
+msgid "Doctor Notes"
+msgstr "Notes médicales"
+
+#: patients/templates/patients/detail.html:34
+#: records/templates/records/procedure_report_list.html:4
+msgid "Procedure Reports"
+msgstr "Comptes rendus d'actes"
+
+#: patients/templates/patients/detail.html:37
+#: records/templates/records/labwork_demand_list.html:3
+msgid "Labwork Demands"
+msgstr "Demandes d'analyses"
+
+#: patients/templates/patients/detail.html:46
+msgid "Search appointment type"
+msgstr "Rechercher un type de rendez-vous"
+
+#: patients/templates/patients/detail.html:50
+#: patients/templates/patients/detail.html:93
+#: patients/templates/patients/detail.html:134
+#: patients/templates/patients/detail.html:175
+#: patients/templates/patients/detail.html:216
+msgid "Go"
+msgstr "Aller"
+
+#: patients/templates/patients/detail.html:72
+#: patients/templates/patients/detail.html:113
+#: patients/templates/patients/detail.html:154
+#: patients/templates/patients/detail.html:195
+#: patients/templates/patients/detail.html:236
+#: patients/templates/patients/edit.html:4
+msgid "Edit"
+msgstr "Modifier"
+
+#: patients/templates/patients/detail.html:80
+msgid "No appointments match."
+msgstr "Aucun rendez-vous correspondant."
+
+#: patients/templates/patients/detail.html:89
+msgid "Search medication or notes"
+msgstr "Rechercher un médicament ou des notes"
+
+#: patients/templates/patients/detail.html:97
+#: records/templates/records/prescription_add.html:5
+#: records/templates/records/prescription_list.html:14
+msgid "New prescription"
+msgstr "Nouvelle ordonnance"
+
+#: patients/templates/patients/detail.html:111
+#: patients/templates/patients/detail.html:152
+#: patients/templates/patients/detail.html:193
+#: patients/templates/patients/detail.html:234
+#: records/templates/records/labwork_demand_list.html:26
+#: records/templates/records/note_list.html:36
+#: records/templates/records/prescription_list.html:38
+msgid "Print"
+msgstr "Imprimer"
+
+#: patients/templates/patients/detail.html:121
+msgid "No prescriptions match."
+msgstr "Aucune ordonnance correspondante."
+
+#: patients/templates/patients/detail.html:130
+msgid "Search note content"
+msgstr "Rechercher dans le contenu des notes"
+
+#: patients/templates/patients/detail.html:138
+#: records/templates/records/note_list.html:13
+msgid "New note"
+msgstr "Nouvelle note"
+
+#: patients/templates/patients/detail.html:162
+msgid "No notes match."
+msgstr "Aucune note correspondante."
+
+#: patients/templates/patients/detail.html:171
+msgid "Search procedure or findings"
+msgstr "Rechercher un acte ou des constatations"
+
+#: patients/templates/patients/detail.html:179
+#: records/templates/records/procedure_report_list.html:13
+msgid "New report"
+msgstr "Nouveau compte rendu"
+
+#: patients/templates/patients/detail.html:203
+msgid "No procedure reports match."
+msgstr "Aucun compte rendu correspondant."
+
+#: patients/templates/patients/detail.html:212
+msgid "Search test or indication"
+msgstr "Rechercher un examen ou une indication"
+
+#: patients/templates/patients/detail.html:220
+#: records/templates/records/labwork_demand_list.html:12
+msgid "New demand"
+msgstr "Nouvelle demande"
+
+#: patients/templates/patients/detail.html:244
+msgid "No labwork demands match."
+msgstr "Aucune demande d'analyses correspondante."
+
+#: patients/templates/patients/list.html:29
+msgid "Age"
+msgstr "Âge"
+
+#: patients/templates/patients/list.html:31
+msgid "Patient Details"
+msgstr "Détails du patient"
+
+#: patients/templates/patients/list.html:52
+msgid "No patients yet."
+msgstr "Aucun patients pour le moment."
+
+#: patients/views.py:36
+msgid "You must belong to a clinic to manage patients."
+msgstr "vous devez appartenir à une clinique pour gérer les patients."
+
+#: patients/views.py:72
+msgid "Patient added successfully"
+msgstr "Patient ajouté avec succès"
+
+#: patients/views.py:206
+msgid "Prescription created"
+msgstr "Ordonnance créée"
+
+#: patients/views.py:250
+msgid "Prescription updated"
+msgstr "Ordonnance mise à jour"
+
+#: patients/views.py:285
+msgid "Note saved"
+msgstr "Note enregistrée"
+
+#: patients/views.py:311
+msgid "Note updated"
+msgstr "Note mise à jour"
+
+#: patients/views.py:342
+msgid "Procedure report created"
+msgstr "Compte rendu créé"
+
+#: patients/views.py:379
+msgid "Procedure report updated"
+msgstr "Compte rendu mis à jour"
+
+#: patients/views.py:420
+msgid "Labwork demand created"
+msgstr "Demande d'analyses créée"
+
+#: patients/views.py:461
+msgid "Labwork demand updated"
+msgstr "Demande d'analyses mise à jou"
+
+#: records/forms.py:20
+msgid "Patient name on this prescription (optional)"
+msgstr "Le nom de patient sur cette ordonnance (optionale)"
+
+#: records/forms.py:23
+msgid "Leave blank to use the patient's name on file"
+msgstr "Laissez ce champ vide pour utiliser le nom du patient enregistré dans le dossier."
+
+#: records/forms.py:29
+msgid "Notes"
+msgstr "Notes"
+
+#: records/forms.py:46
+msgid "Medication name"
+msgstr "Nom du médicament"
+
+#: records/forms.py:53
+msgid "Dosage"
+msgstr "Posologie"
+
+#: records/forms.py:57
+msgid "Frequency"
+msgstr "Fréquence"
+
+#: records/forms.py:61
+msgid "Duration"
+msgstr "Durée"
+
+#: records/forms.py:65
+msgid "Instructions"
+msgstr "Instructions"
+
+#: records/forms.py:80
+msgid "Note"
+msgstr "Note"
+
+#: records/forms.py:95
+msgid "General notes"
+msgstr "Notes générales"
+
+#: records/forms.py:106
+msgid "Procedure name"
+msgstr "Nom de la procedure"
+
+#: records/forms.py:110
+msgid "Findings / notes"
+msgstr "Constatations / notes"
+
+#: records/forms.py:131
+msgid "Test name"
+msgstr "Nom de l'analyse"
+
+#: records/forms.py:139
+msgid "Clinical indication / reason"
+msgstr "Indication clinique / motif"
+
+#: records/forms.py:151
+msgid "professional_title"
+msgstr "Titre professionelle"
+
+#: records/forms.py:152
+msgid "e.g. General Practitioner"
+msgstr "ex. Médecin généraliste"
+
+#: records/forms.py:154
+msgid "registration_number"
+msgstr "Numéro d'enregistrement médical"
+
+#: records/forms.py:155
+msgid "Medical registration number"
+msgstr "Numéro d'enregistrement médical"
+
+#: records/forms.py:157
+msgid "signature"
+msgstr "signature"
+
+#: records/forms.py:158
+msgid "stamp"
+msgstr "Cachet de médecin"
+
+#: records/models.py:35
+msgid "Optional. Overrides the patient's name on this prescription only. does not change the patient's actual record."
+msgstr "Facultatif. Remplace le nom du patient uniquement pour cette ordonnance ; ne modifie pas le dossier réel du patient."
+
+#: records/models.py:121
+msgid "Routine"
+msgstr "Routine"
+
+#: records/models.py:122
+msgid "Urgent"
+msgstr "Urgent"
+
+#: records/templates/records/document_profile.html:15
+msgid "This information is printed on every prescription, report, and document you generate."
+msgstr "Cette information est imprimée sur chaque ordonnance, compte rendu et document que vous générez."
+
+#: records/templates/records/document_profile.html:65
+msgid "Save"
+msgstr "Enregistrer"
+
+#: records/templates/records/labwork_demand_add.html:4
+#: records/templates/records/labwork_demand_add.html:5
+msgid "New Labwork Demand"
+msgstr "Nouvelle demande d'analyses"
+
+#: records/templates/records/labwork_demand_add.html:23
+#: records/templates/records/labwork_demand_edit.html:28
+msgid "Tests requested"
+msgstr "Analyses demandés"
+
+#: records/templates/records/labwork_demand_add.html:33
+#: records/templates/records/prescription_add.html:50
+#: records/templates/records/procedure_report_add.html:36
+msgid "Create & print"
+msgstr "Créer et imprimer"
+
+#: records/templates/records/labwork_demand_edit.html:3
+msgid "Edit Labwork Demand"
+msgstr "Modifier la demande d'analyses"
+
+#: records/templates/records/labwork_demand_edit.html:4
+msgid "Edit labwork demand"
+msgstr "Modifier la demande d'analyses"
+
+#: records/templates/records/labwork_demand_edit.html:8
+msgid "Edit demand for"
+msgstr "Modifier la demande pour"
+
+#: records/templates/records/labwork_demand_edit.html:9
+#: records/templates/records/note_edit.html:9
+#: records/templates/records/procedure_report_edit.html:10
+msgid "← Back to"
+msgstr "← Retour"
+
+#: records/templates/records/labwork_demand_list.html:4
+#: records/templates/records/labwork_demand_list.html:11
+msgid "Labwork demands"
+msgstr "Demandes d'analyses"
+
+#: records/templates/records/labwork_demand_list.html:32
+msgid "No labwork demands yet."
+msgstr "Aucune demande d'analyses pour le moment."
+
+#: records/templates/records/labwork_demand_pdf.html:42
+msgid "Test"
+msgstr "Examen"
+
+#: records/templates/records/labwork_demand_pdf.html:42
+msgid "Urgency"
+msgstr "Urgence"
+
+#: records/templates/records/labwork_demand_pdf.html:42
+msgid "Clinical indication"
+msgstr "Indication clinique"
+
+#: records/templates/records/note_add.html:4
+msgid "New Note"
+msgstr "Nouvelle note"
+
+#: records/templates/records/note_add.html:5
+msgid "New doctor note"
+msgstr "Nouvelle note médicale"
+
+#: records/templates/records/note_add.html:34
+msgid "Save & print"
+msgstr "Enregistrer et imprimer"
+
+#: records/templates/records/note_edit.html:3
+msgid "Edit Note"
+msgstr "Modifier la note"
+
+#: records/templates/records/note_edit.html:4
+msgid "Edit note"
+msgstr "Modifier la note"
+
+#: records/templates/records/note_edit.html:8
+msgid "Edit note for"
+msgstr "Modifier la note pour"
+
+#: records/templates/records/note_list.html:5
+#: records/templates/records/note_list.html:12
+msgid "Doctor notes"
+msgstr "Notes médicales"
+
+#: records/templates/records/note_list.html:44
+msgid "No notes yet."
+msgstr "Aucune note pour le moment."
+
+#: records/templates/records/prescription_add.html:4
+msgid "New Prescription"
+msgstr "Nouvelle ordonnance"
+
+#: records/templates/records/prescription_add.html:32
+#: records/templates/records/prescription_edit.html:36
+msgid "Medications"
+msgstr "Médicaments"
+
+#: records/templates/records/prescription_edit.html:4
+msgid "Edit Prescription"
+msgstr "Modifier l'ordonnances"
+
+#: records/templates/records/prescription_edit.html:5
+msgid "Edit prescription"
+msgstr "Modifier l'ordonnance"
+
+#: records/templates/records/prescription_edit.html:9
+msgid "Edit prescription for"
+msgstr "Modifier l'ordonnance pour"
+
+#: records/templates/records/prescription_edit.html:10
+msgid "← Back to "
+msgstr "← Retour "
+
+#: records/templates/records/prescription_list.html:46
+msgid "No prescriptions yet."
+msgstr "Aucune ordonnance pour le moment."
+
+#: records/templates/records/procedure_report_add.html:4
+msgid "New Procedure Report"
+msgstr "Nouveau compte rendu"
+
+#: records/templates/records/procedure_report_add.html:5
+msgid "New procedure report"
+msgstr "Nouveau compte rendu"
+
+#: records/templates/records/procedure_report_add.html:22
+#: records/templates/records/procedure_report_edit.html:29
+msgid "Procedures"
+msgstr "Les procedures"
+
+#: records/templates/records/procedure_report_edit.html:4
+msgid "Edit Procedure Report"
+msgstr "Modifier le compte rendu"
+
+#: records/templates/records/procedure_report_edit.html:5
+msgid "Edit procedure report"
+msgstr "Modifier le compte rendus"
+
+#: records/templates/records/procedure_report_edit.html:9
+msgid "Edit report for"
+msgstr "Modifier le compte rendu pour"
+
+#: records/templates/records/procedure_report_list.html:5
+#: records/templates/records/procedure_report_list.html:12
+msgid "Procedure reports"
+msgstr "Comptes rendus d'actes"
+
+#: records/templates/records/procedure_report_list.html:33
+msgid "No procedure reports yet."
+msgstr "Aucun compte rendu pour le moment."
+
+#: records/views.py:42
+msgid "You must belong to a clinic to manage medical records."
+msgstr "Vous devez appartenir à une clinique pour gérer les dossiers médicaux."
+
+#: records/views.py:171
+msgid "Only doctors have a document profile."
+msgstr "Seuls les médecins ont un profil de document."
+
+#: records/views.py:175
+msgid "Your account has no doctor profile."
+msgstr "Votre compte n'a pas de profil de médecin."
+
+#: records/views.py:184
+msgid "Document profile updated"
+msgstr "Profil de document mis à jour"

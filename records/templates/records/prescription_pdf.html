@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @page { size: A4; margin: 2cm; }
+        body { font-family: Arial, sans-serif; font-size: 12pt; color: #212529; }
+        .header { border-bottom: 2px solid #0d6efd; padding-bottom: 10px; margin-bottom: 20px; }
+        .clinic-name { font-size: 18pt; font-weight: bold; }
+        .doctor-line { margin-top: 4px; color: #495057; }
+        .meta { display: flex; justify-content: space-between; margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border-bottom: 1px solid #dee2e6; padding: 8px; text-align: left; font-size: 11pt; }
+        th { background-color: #f8f9fa; }
+        .notes { margin-top: 20px; }
+        .footer { margin-top: 60px; display: flex; justify-content: space-between; align-items: flex-end; }
+        .stamp-signature img { max-height: 80px; }
+        .clinic-footer { margin-top: 40px; font-size: 9pt; color: #6c757d; text-align: center; border-top: 1px solid #dee2e6; padding-top: 10px; }
+    </style>
+    
+</head>
+<body>
+    <div class="header">
+        <div class="clinic-name">{{ clinic.name }}</div>
+        {% if clinic.address %}<div>{{ clinic.address }}</div>{% endif %}
+        {% if clinic.phone %}<div>{{ clinic.phone }}</div>{% endif %}
+        {% if clinic.document_header %}<div>{{ clinic.document_header }}</div>{% endif %}
+        <div class="doctor-line">
+            Dr. {{ doctor.user.get_full_name }}
+            {% if doctor.document_profile.professional_title %} — {{ doctor.document_profile.professional_title }}{% endif %}
+            — {{ doctor.specialty }}
+            {% if doctor.document_profile.registration_number %} (Reg. {{ doctor.document_profile.registration_number }}){% endif %}
+        </div>
+    </div>
+
+    <div class="meta">
+        <div>
+            <strong>Patient:</strong> {{ prescription.display_patient_name }}<br>
+            {% if prescription.patient.age %}
+                <strong>Age:</strong> {{ prescription.patient.age }}<br>
+            {% endif %}
+        </div>
+        <div><strong>Date:</strong> {{ prescription.created_at|date:"Y-m-d" }}</div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Medication</th>
+                <th>Dosage</th>
+                <th>Frequency</th>
+                <th>Duration</th>
+                <th>Instructions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{ item.medication_name }}</td>
+                    <td>{{ item.dosage }}</td>
+                    <td>{{ item.frequency }}</td>
+                    <td>{{ item.duration }}</td>
+                    <td>{{ item.instructions }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if prescription.notes %}
+        <div class="notes">
+            <strong>Notes:</strong>
+            <p>{{ prescription.notes }}</p>
+        </div>
+    {% endif %}
+
+    <div class="footer">
+        <div></div>
+        <div class="stamp-signature text-end">
+            {% if doctor.document_profile.stamp %}
+                <img src="{{ doctor.document_profile.stamp.url }}" alt="Stamp"><br>
+            {% endif %}
+            {% if doctor.document_profile.signature %}
+                <img src="{{ doctor.document_profile.signature.url }}" alt="Signature">
+            {% endif %}
+        </div>
+    </div>
+
+    {% if clinic.document_footer %}
+        <div class="clinic-footer">{{ clinic.document_footer }}</div>
+    {% endif %}
+
+    
+</body>
+</html>

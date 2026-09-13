@@ -1,0 +1,38 @@
+{% extends "core/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "New Labwork Demand" %}{% endblock title %}
+{% block page_title %}{% trans "New Labwork Demand" %}{% endblock page_title %}
+
+{% block content %}
+    {% url 'patients:detail' patient.id as back_url %}
+    {% include "core/partials/back_button.html" with back_url=back_url back_label="Back to patient"%}
+
+    <div class="card border-0 shadow-sm">
+        <div class="card-body p-4">
+            <form method="post">
+                {% csrf_token %}
+                {{ formset.management_form }}
+
+                
+                <div class="mb-4">
+                    {{ form.doctor.label_tag }}
+                    {{ form.doctor }}
+                </div>
+
+                <h5 class="fw-semibold mb-3">{% trans "Tests requested" %}</h5>
+
+                {% for item_form in formset %}
+                    <div class="row g-2 mb-2 border-bottom pb-2">
+                        <div class="col-md-4">{{ item_form.test_name }}</div>
+                        <div class="col-md-2">{{ item_form.urgency }}</div>
+                        <div class="col-md-6">{{ item_form.clinical_indication }}</div>
+                    </div>
+                {% endfor %}
+
+                <button type="submit" class="btn btn-primary mt-3">{% trans "Create & print" %}</button>
+                <a href="{% url 'patients:detail' patient.pk  %}" class="btn btn-outline-secondary">{% trans "Cancel" %}</a>
+            </form>
+        </div>
+    </div>
+{% endblock content %}
